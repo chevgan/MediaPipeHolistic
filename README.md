@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Анализ позы человека с использованием React и Mediapipe Holistic
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание проекта
 
-## Available Scripts
+Этот проект представляет собой веб-приложение, разработанное с использованием React, для анализа позы человека в реальном времени с помощью библиотеки Mediapipe Holistic. Приложение также измеряет угол между левым и правым локтями и отображает его на видеопотоке с веб-камеры.
 
-In the project directory, you can run:
+## Технологии и библиотеки
 
-### `npm start`
+- **React:** Используется для создания пользовательского интерфейса и компонентов.
+- **Webcam:** Библиотека React для доступа к веб-камере и получения видеопотока.
+- **Mediapipe Holistic:** Библиотека для анализа позы человека и обработки видеопотока.
+- **Canvas:** Используется для отображения анализа позы и углов между локтями на видеопотоке.
+- **React Router:** Используется для навигации между страницами.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Функциональность
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Загрузка видеопотока с веб-камеры и передача его в библиотеку Mediapipe Holistic для анализа позы человека.
+- Очистка некоторых маркеров позы, чтобы сфокусироваться только на интересующих частях тела (локти, плечи и руки).
+- Вычисление угла между левым локтем и левым плечом, а также угла между правым локтем и правым плечом.
+- Отображение анализа позы и измеренных углов на видеопотоке и их обновление в реальном времени.
+- Предоставление кнопки "Назад" для перехода на предыдущую страницу.
 
-### `npm test`
+## Интерфейс
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Использование веб-камеры для отображения видеопотока.
+- Отображение анализа позы и измеренных углов на видеопотоке.
+- Вывод измеренных углов для левого и правого локтей под видеопотоком.
+- Предоставление кнопки "Назад" для перехода на предыдущую страницу.
